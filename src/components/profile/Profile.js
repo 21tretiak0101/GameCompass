@@ -5,11 +5,6 @@ import {store} from '../../store/store';
 
 export class Profile extends CompassComponent {
 
-  constructor() {
-    super();
-    this.params = {};
-  }
-
   get class() {
     return '.profile';
   }

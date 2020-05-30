@@ -14,7 +14,6 @@ export class CompassApp {
 
   start() {
     this.insert(this.profile.template());
-    this.profile.postData();
   }
 
   generateResult() {
