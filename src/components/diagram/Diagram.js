@@ -1,6 +1,7 @@
 import {CompassComponent} from '../CompassComponent';
 import {store} from '../../store/store';
 
+
 export class Diagram extends CompassComponent {
 
   template() {

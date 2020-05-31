@@ -4,6 +4,7 @@ import {fetching} from '../../store/actions';
 import {store} from '../../store/store';
 import {QUESTIONS} from './question';
 
+
 export class Profile extends CompassComponent {
 
   get class() {
@@ -16,7 +17,6 @@ export class Profile extends CompassComponent {
 
   postData() {
     let params = {};
-
     QUESTIONS.forEach(q => {
       let values = [];
       q.inputs.forEach(i => {
@@ -27,7 +27,6 @@ export class Profile extends CompassComponent {
       });
       params = {...params, [q.key]: values};
     });
-
     console.log(params);
     store.dispatch(fetching(params));
   }
