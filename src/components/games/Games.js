@@ -9,7 +9,7 @@ export class Games extends CompassComponent {
 
   result() {
     const state = store.getState();
-    console.log('Games: ', state);
+    console.log('Games: ', state.profile);
     return this.template();
   }
 }
